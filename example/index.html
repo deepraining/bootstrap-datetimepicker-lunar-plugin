@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bootstrap-datetimepicker-lunar-plugin example</title>
+
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap-datetime-picker/css/bootstrap-datetimepicker.css">
+</head>
+<body>
+<div style="position: relative; top: 100px; width: 200px; margin: 0 auto;">
+    <input class="form-control" id="input">
+</div>
+</body>
+<script src="../node_modules/jquery/dist/jquery.js"></script>
+<script src="../node_modules/lunar-calendar/lib/LunarCalendar.js"></script>
+<script src="../node_modules/bootstrap-datetime-picker/js/bootstrap-datetimepicker.js"></script>
+<script src="../node_modules/bootstrap-datetime-picker/js/locales/bootstrap-datetimepicker.zh-CN.js"></script>
+<script src="../dist/bootstrap-datetimepicker-lunar-plugin.js"></script>
+<script>
+$('#input').datetimepicker({
+    format: 'yyyy-mm-dd hh:ii:ss',
+    language: 'zh-CN',
+    autoclose: true,
+    forceParse: !1
+});
+</script>
+</html>

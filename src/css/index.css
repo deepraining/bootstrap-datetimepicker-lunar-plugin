@@ -1,0 +1,15 @@
+
+.datetimepicker .lunar-day {
+    width: 50px;
+}
+.datetimepicker .lunar-text {
+    display: inline;
+    width: auto;
+    height: auto;
+    line-height: inherit;
+    float: none;
+    margin: 0;
+    cursor: inherit;
+    border-radius: 0;
+    font-size: 12px;
+}
