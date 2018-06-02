@@ -1,4 +1,6 @@
-# 中国农历日期时间选择插件, for [bootstrap-datetimepicker](https://github.com/smalot/bootstrap-datetimepicker).
+# bootstrap-datetimepicker-lunar-plugin
+
+中国农历日期时间选择插件, for [bootstrap-datetimepicker](https://github.com/smalot/bootstrap-datetimepicker).
 
 ## 依赖
 
@@ -6,14 +8,17 @@
 * [bootstrap-datetimepicker](https://github.com/smalot/bootstrap-datetimepicker)
 * [LunarCalendar](https://github.com/zzyss86/LunarCalendar)
 
-## 打开方式
+## 安装
 
 ```
-<script src="path/to/jquery"></script>
-<script src="path/to/bootstrap-datetimepicker"></script>
-<script src="path/to/LunarCalendar"></script>
-<script src="path/to/bootstrap-datetimepicker-lunar-plugin"></script>
-<script>
+npm install --save bootstrap-datetimepicker-lunar-plugin
+```
+
+## 使用
+
+```
+const $ = require('jquery');
+require('bootstrap-datetimepicker-lunar-plugin');
+
 $('selector').datetimepicker({...});
-</script>
 ```
