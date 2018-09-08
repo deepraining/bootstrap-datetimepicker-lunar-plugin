@@ -1,20 +1,21 @@
 {
-  "name": "bootstrap-datepicker-lunar-plugin",
+  "name": "bootstrap-datetimepicker-lunar-plugin",
   "version": "0.1.0",
-  "description": "中国农历日期选择插件, for bootstrap-datepicker.",
-  "homepage": "https://github.com/senntyou/bootstrap-datepicker-lunar-plugin",
+  "description": "中国农历日期时间选择插件, for bootstrap-datetimepicker.",
+  "homepage": "https://github.com/senntyou/bootstrap-datetimepicker-lunar-plugin",
   "author": "senntyou",
   "keywords": [
     "lunar",
     "农历",
     "calendar",
     "date",
+    "time",
     "picker"
   ],
   "source": "src/index.js",
-  "module": "dist/bootstrap-datepicker-lunar-plugin.m.js",
-  "umd:main": "dist/bootstrap-datepicker-lunar-plugin.umd.js",
-  "main": "dist/bootstrap-datepicker-lunar-plugin.js",
+  "module": "dist/bootstrap-datetimepicker-lunar-plugin.m.js",
+  "umd:main": "dist/bootstrap-datetimepicker-lunar-plugin.umd.js",
+  "main": "dist/bootstrap-datetimepicker-lunar-plugin.js",
   "files": [
     "dist"
   ],
@@ -22,10 +23,10 @@
   "readmeFilename": "README.md",
   "repository": {
     "type": "git",
-    "url": "https://github.com/senntyou/bootstrap-datepicker-lunar-plugin"
+    "url": "https://github.com/senntyou/bootstrap-datetimepicker-lunar-plugin"
   },
   "scripts": {
-    "build": "microbundle --name bootstrap-datepicker-lunar-plugin",
+    "build": "microbundle --name bootstrap-datetimepicker-lunar-plugin",
     "dev": "microbundle watch",
     "precommit": "npm run lint-staged",
     "prettier": "prettier --write ./**/*.{js,json,md}",
@@ -73,7 +74,7 @@
     "node": ">=8.0.0"
   },
   "dependencies": {
-    "bootstrap-datepicker": "^1.8.0",
+    "bootstrap-datetime-picker": "^2.4.4",
     "jquery": "^3.3.1",
     "lunar-calendar": "^0.1.4"
   }

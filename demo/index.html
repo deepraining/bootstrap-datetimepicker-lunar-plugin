@@ -2,11 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>bootstrap-datepicker-lunar-plugin</title>
+    <title>bootstrap-datetimepicker-lunar-plugin</title>
 
     <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
-    <link rel="stylesheet" href="../node_modules/bootstrap-datepicker/dist/css/bootstrap-datepicker.css">
-    <link rel="stylesheet" href="../dist/bootstrap-datepicker-lunar-plugin.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap-datetime-picker/css/bootstrap-datetimepicker.css">
+  <link rel="stylesheet" href="../dist/bootstrap-datetimepicker-lunar-plugin.css">
 </head>
 <body>
 <div style="position: relative; top: 100px; width: 200px; margin: 0 auto;">
@@ -18,12 +18,12 @@
   window.jquery = window.jQuery; // compatible microbundle
 </script>
 <script src="../node_modules/lunar-calendar/lib/LunarCalendar.js"></script>
-<script src="../node_modules/bootstrap-datepicker/dist/js/bootstrap-datepicker.js"></script>
-<script src="../node_modules/bootstrap-datepicker/dist/locales/bootstrap-datepicker.zh-CN.min.js"></script>
-<script src="../dist/bootstrap-datepicker-lunar-plugin.umd.js"></script>
+<script src="../node_modules/bootstrap-datetime-picker/js/bootstrap-datetimepicker.js"></script>
+<script src="../node_modules/bootstrap-datetime-picker/js/locales/bootstrap-datetimepicker.zh-CN.js"></script>
+<script src="../dist/bootstrap-datetimepicker-lunar-plugin.umd.js"></script>
 <script>
-$('#input').datepicker({
-    format: 'yyyy-mm-dd',
+$('#input').datetimepicker({
+    format: 'yyyy-mm-dd hh:ii:ss',
     language: 'zh-CN',
     autoclose: true,
     forceParse: !1

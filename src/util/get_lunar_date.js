@@ -1,13 +1,16 @@
 import LunarCalendar from 'lunar-calendar';
-import getDate from './get_date';
+import getRealDate from './get_real_date';
 
 /**
- * Get lunar year, month, day, week according to input time(timestamp).
+ * Get lunar year, month, day.
  *
- * @param time
+ * @param year
+ * @param month
+ * @param day
+ * @param dayMark
  */
-export default time => {
-  const date = getDate(time);
+export default (year, month, day, dayMark) => {
+  const date = getRealDate(year, month, day, dayMark);
 
   const lunarInfo = LunarCalendar.solarToLunar(date.year, date.month, date.day);
 

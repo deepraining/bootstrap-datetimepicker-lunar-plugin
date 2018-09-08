@@ -1,16 +1,16 @@
 import $ from 'jquery';
-import 'bootstrap-datepicker';
+import 'bootstrap-datetime-picker';
 import './index.less';
-import show from './show';
+import fill from './fill';
 
-// datepicker prototype
-const proto = $.fn.datepicker.prototype.constructor.Constructor.prototype;
+// datetimepicker prototype
+const proto = $.fn.datetimepicker.prototype.constructor.Constructor.prototype;
 
-// rewrite datepicker.prototype.show
-proto.oldShow = proto.show;
-proto.show = function(...args) {
+// rewrite  datetimepicker.prototype.show
+proto.oldFill = proto.fill;
+proto.fill = function(e) {
   const self = this;
-  self.oldShow(args);
+  self.oldFill(e);
 
-  show(self);
+  fill(self);
 };
