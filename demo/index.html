@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bootstrap-datepicker-lunar-plugin</title>
+
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap-datepicker/dist/css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="../dist/bootstrap-datepicker-lunar-plugin.css">
+</head>
+<body>
+<div style="position: relative; top: 100px; width: 200px; margin: 0 auto;">
+    <input class="form-control" id="input">
+</div>
+</body>
+<script src="../node_modules/jquery/dist/jquery.js"></script>
+<script>
+  window.jquery = window.jQuery; // compatible microbundle
+</script>
+<script src="../node_modules/lunar-calendar/lib/LunarCalendar.js"></script>
+<script src="../node_modules/bootstrap-datepicker/dist/js/bootstrap-datepicker.js"></script>
+<script src="../node_modules/bootstrap-datepicker/dist/locales/bootstrap-datepicker.zh-CN.min.js"></script>
+<script src="../dist/bootstrap-datepicker-lunar-plugin.umd.js"></script>
+<script>
+$('#input').datepicker({
+    format: 'yyyy-mm-dd',
+    language: 'zh-CN',
+    autoclose: true,
+    forceParse: !1
+});
+</script>
+</html>
