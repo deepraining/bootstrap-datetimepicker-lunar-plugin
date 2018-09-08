@@ -2,6 +2,8 @@
 
 中国农历日期时间选择插件, for [bootstrap-datetimepicker](https://github.com/smalot/bootstrap-datetimepicker).
 
+![](./preview.png)
+
 ## 依赖
 
 * [jquery](https://github.com/jquery/jquery)
